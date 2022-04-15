@@ -1,0 +1,8 @@
+export const ADD_HOTELS = 'ADD_HOTELS'
+export const HOTELS_LOADING = 'HOTELS_LOADING'
+export const HOTELS_FAILED = 'HOTELS_FAILED'
+export const FETCH_HOTELS = 'FETCH_HOTELS'
+export const ADD_AUTH_DATA = 'ADD_AUTH_DATA'
+export const AUTH_DATA_FAILED = 'AUTH_DATA_FAILED'
+export const ADD_FILTERS = 'ADD_FILTERS'
+export const UPDATE_LIKED = 'UPDATE_LIKED'
