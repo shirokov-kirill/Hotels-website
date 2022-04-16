@@ -1,0 +1,56 @@
+.hotel-name {
+    left: 15.07%;
+    right: 41.44%;
+    top: 19.19%;
+    bottom: 59.6%;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    letter-spacing: -0.408px;
+    color: #424242;
+}
+
+.hotel-icon {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: rgba(65, 82, 46, 0.05);
+}
+
+.hotel-inner-date-duration {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color:#878787;
+}
+
+.price {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 11px;
+    color: #878787;
+}
+
+.price-value {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    color: #424242;
+}
+
+.like{
+    color: #C4C4C4;
+}
+
+.like:hover {
+    color:#EBEBEB;
+}
+
+.like.active {
+    color: red;
+}

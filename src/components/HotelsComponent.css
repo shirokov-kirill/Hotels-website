@@ -52,12 +52,28 @@
     border-radius: 16px;
 }
 
+.padding-16 {
+    padding: 16px;
+}
+
+.padding-left-0 {
+    padding-left: 0px;
+}
+
 .padding-32 {
     padding: 32px;
 }
 
+.margin-0-10 {
+    margin: 0px 10px;
+}
+
 .margin-0{
     margin: 0;
+}
+
+.margin-16{
+    margin: 16px;
 }
 
 .margin-bottom-4 {
@@ -76,6 +92,10 @@
     margin-bottom: 16px;
 }
 
+.margin-bottom-22 {
+    margin-bottom: 22px;
+}
+
 .margin-bottom-24 {
     margin-bottom: 24px;
 }
@@ -88,6 +108,10 @@
     margin-bottom: 32px;
 }
 
+.margin-right-3 {
+    margin-right: 3px;
+}
+
 .margin-right-4 {
     margin-right: 4px;
 }
@@ -96,9 +120,18 @@
     margin-right: 8px;
 }
 
+.margin-right-9 {
+    margin-right: 9px;
+}
+
+
 
 .margin-right-24 {
     margin-right: 24px;
+}
+
+.margin-left-0{
+    margin-left: 0px;
 }
 
 .space-between {
@@ -110,7 +143,6 @@
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    line-height: 19px;
 
     color: #424242;
 }
@@ -168,4 +200,42 @@
 
 .swiper-slide {
     border-radius: 10px;
+}
+
+.my-scrollbar{
+    width: 590px;
+    height: 525px;
+    overflow-y: scroll;
+}
+
+.divider {
+    width: 95%;
+    height: 1px;
+    background: rgba(135, 135, 135, 0.2);
+    border-radius: 8px;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.width-100 {
+    width: 100%;
+}
+
+.height-100 {
+    height: 100%;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.align-right{
+    align-items: end;
+}
+
+.cursor-pointer {
+    cursor: pointer;
 }

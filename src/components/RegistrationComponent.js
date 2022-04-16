@@ -71,7 +71,7 @@ export default class Registration extends React.Component {
                             />
                         </div>
                     </div>
-                    <Button className="login-modal-button" onClick={this.loginHandler}>Войти</Button>
+                    <Button className="login-modal-button cursor-pointer" onClick={this.loginHandler}>Войти</Button>
                 </div>
             </React.Fragment>
         )

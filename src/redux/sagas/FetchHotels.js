@@ -1,7 +1,6 @@
-import {HOTELS} from "../../shared/hotels"
 import {addHotels, hotelsLoading, hotelsFailed} from "../ActionCreators"
 import {FETCH_HOTELS} from "../ActionTypes"
-import {takeEvery, take, put, call} from "redux-saga/effects"
+import {takeEvery, put, call} from "redux-saga/effects"
 
 export default function* watchFetchHotels() {
     yield takeEvery(FETCH_HOTELS, fetchHotelsAsync);
@@ -9,7 +8,7 @@ export default function* watchFetchHotels() {
 
 function addDays(date, days) {
   var result = new Date(date);
-  result.setDate(result.getDate() + days);
+  result.setDate(Number(result.getDate()) + Number(days));
   return result;
 }
 
