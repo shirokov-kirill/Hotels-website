@@ -12,3 +12,19 @@
     font-size: 24px;
     color: #424242;
 }
+
+.header-exit-text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.header-out-pic {
+    height: 18px;
+    width: 18px;
+}
+
+.button {
+    cursor: pointer;
+}

@@ -31,10 +31,10 @@ export default class Preferences extends React.Component{
         if(this.state.sorted.cathegory === "rating"){
             if(this.state.sorted.order === "up"){
                 liked.sort((a, b) => {
-                    if(a.hotel.raiting === b.hotel.raiting){
+                    if(a.hotel.stars === b.hotel.stars){
                         return 0
                     } else {
-                        if(a.hotel.raiting > b.hotel.raiting){
+                        if(a.hotel.stars > b.hotel.stars){
                             return 1
                         } else {
                             return -1
@@ -43,10 +43,10 @@ export default class Preferences extends React.Component{
                 })
             } else {
                 liked.sort((a, b) => {
-                    if(a.hotel.raiting === b.hotel.raiting){
+                    if(a.hotel.stars === b.hotel.stars){
                         return 0
                     } else {
-                        if(a.hotel.raiting < b.hotel.raiting){
+                        if(a.hotel.stars < b.hotel.stars){
                             return 1
                         } else {
                             return -1

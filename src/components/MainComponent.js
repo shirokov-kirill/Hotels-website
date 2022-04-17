@@ -8,12 +8,12 @@ import Hotels from './HotelsComponent';
 
 const mapStateToProps = state => {
   return {
-    authed: state.authed
+    firstAuthTrigger: state.authed
   }   
 }
 
 const mapDispatchToProps = (dispatch) => ({
-  saveLoginInfo: (values) => {dispatch(saveLoginInfo(values))},
+  saveLoginInfo: (value) => {dispatch(saveLoginInfo(value))},
 })
 
 class Main extends Component {
@@ -23,26 +23,28 @@ class Main extends Component {
     this.handleLoginInput = this.handleLoginInput.bind(this)
   }
 
-  handleLoginInput(values) {
-    this.props.saveLoginInfo(values)
+  handleLoginInput(value) {
+    console.log('guy')
+    console.log(value)
+    this.props.saveLoginInfo(value)
   }
 
   render(){
-
+    console.log(sessionStorage.getItem('authed'))
     return (
       <div>
         <Routes>
             <Route path='/registration' element={(
-                this.props.authed.authed && <Navigate to='/hotels' replace={true}/> || <Registration onLoginClicked={this.handleLoginInput}/>
+                sessionStorage.getItem('authed') === "true" && <Navigate to='/hotels' replace={true}/> || <Registration onLoginClicked={this.handleLoginInput}/>
               )
             }/>
 
             <Route exact path='/hotels' element={(
-              this.props.authed.authed && <Hotels/> || <Navigate to='/registration' replace={true}/>
+              sessionStorage.getItem('authed') === "true" && <Hotels handleOut={this.handleLoginInput}/> || <Navigate to='/registration' replace={true}/>
             )
             }/>
             <Route path='*' element={(
-              this.props.authed.authed && <Navigate to='/hotels' replace={true}/> || <Navigate to='/registration' replace={true}/>
+              sessionStorage.getItem('authed') === "true" && <Navigate to='/hotels' replace={true}/> || <Navigate to='/registration' replace={true}/>
             )}/>
         </Routes>
       </div>

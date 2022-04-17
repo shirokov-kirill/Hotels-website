@@ -1,5 +1,6 @@
 import React from "react";
 import { Control, Errors } from "react-redux-form";
+import { Navigate } from "react-router";
 import { Label, Button } from "reactstrap";
 import "./RegistrationComponent.css"
 
@@ -20,7 +21,8 @@ export default class Registration extends React.Component {
         if(!validEmail(login) || !validPassword(password) || !minLength(8)(password) || !minLength(3)(login)){
             return
         } else {
-            this.props.onLoginClicked({login: login, password: password})
+            sessionStorage.setItem('authed', true)
+            this.props.onLoginClicked(true)
         }
 
     }

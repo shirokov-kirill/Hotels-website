@@ -67,7 +67,7 @@ export class Hotels extends React.Component {
     render(){
         return(
             <React.Fragment>
-                <Header/>
+                <Header handleOut={this.props.handleOut}/>
                 <div className="base">
                     <div className="flex-horizontal main-window">
                         <div className="additional flex-vertical margin-right-24">

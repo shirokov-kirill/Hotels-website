@@ -7,6 +7,7 @@ const initialState = {
 export const likedReducer = (state = initialState, action) => {
     switch (action.type) {
         case UPDATE_LIKED:
+          console.log("hello")
           return {
             liked: action.payload,
           };

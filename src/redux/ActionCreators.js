@@ -19,9 +19,9 @@ export const fetchHotels = (filters) => ({
     payload: filters
 })
 
-export const saveLoginInfo = (values) => ({
+export const saveLoginInfo = (value) => ({
     type: ActionTypes.ADD_AUTH_DATA,
-    payload: values
+    payload: value
 })
 
 export const saveFilters = (city, fromDate, forNDays) => ({
