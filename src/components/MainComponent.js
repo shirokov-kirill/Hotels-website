@@ -35,16 +35,16 @@ class Main extends Component {
       <div>
         <Routes>
             <Route path='/registration' element={(
-                sessionStorage.getItem('authed') === "true" && <Navigate to='/hotels' replace={true}/> || <Registration onLoginClicked={this.handleLoginInput}/>
+                (sessionStorage.getItem('authed') === "true" && <Navigate to='/hotels' replace={true}/>) || <Registration onLoginClicked={this.handleLoginInput}/>
               )
             }/>
 
             <Route exact path='/hotels' element={(
-              sessionStorage.getItem('authed') === "true" && <Hotels handleOut={this.handleLoginInput}/> || <Navigate to='/registration' replace={true}/>
+              (sessionStorage.getItem('authed') === "true" && <Hotels handleOut={this.handleLoginInput}/>) || <Navigate to='/registration' replace={true}/>
             )
             }/>
             <Route path='*' element={(
-              sessionStorage.getItem('authed') === "true" && <Navigate to='/hotels' replace={true}/> || <Navigate to='/registration' replace={true}/>
+              (sessionStorage.getItem('authed') === "true" && <Navigate to='/hotels' replace={true}/>) || <Navigate to='/registration' replace={true}/>
             )}/>
         </Routes>
       </div>

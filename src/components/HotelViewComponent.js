@@ -18,8 +18,8 @@ export default function HotelView({hotel, onLikeClicked, withLike, withIcon=true
         <div className="flex-horizontal padding-16 padding-left-0">
             {withIcon &&
             <div className='hotel-icon margin-right-24'>
-                <img className='roof' src="/assets/images/roof.png"/>
-                <img className='house' src="/assets/images/house.png"/>
+                <img className='roof' alt='roof' src="/assets/images/roof.png"/>
+                <img className='house' alt='house' src="/assets/images/house.png"/>
             </div>
             }
             <div className='flex-horizontal space-between width-100'>

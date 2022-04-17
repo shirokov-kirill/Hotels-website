@@ -1,6 +1,5 @@
 import React from "react";
 import { Control, Errors } from "react-redux-form";
-import { Navigate } from "react-router";
 import { Label, Button } from "reactstrap";
 import "./RegistrationComponent.css"
 
